@@ -43,7 +43,7 @@ class App extends React.Component {
               onChange={this.myTaskChangeHandler} />
           </div>
           <ul style={{padding: '0'}}>
-            {this.state.tasks.map((value,index)=>{
+            {this.state.tasks.map((value,index)=>{ //de lay gia tri o contructor
               return <li key={index}>{value}</li>
             })}
           </ul>
