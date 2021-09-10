@@ -27,11 +27,14 @@ class Todo extends React.Component {
     if(!this.state.data.done){
         checkDone = (
             <img 
-                src='./assets/checked.png'
+                src={
+                  process.env.PUBLIC_URL +
+                  '/assets/checked.png'
+                }
                 alt='Hoàn thành'
                 width='30' style={{cursor: 'pointer'}}
                 title='Bấm để hoàn thành'
-                onClick={()=>this.completeTask(this.props.data.id)}
+                onClick={()=>this.props.completeTask(this.props.data.id)}
             />
         )
     }
@@ -40,7 +43,10 @@ class Todo extends React.Component {
         {checkDone}
         &nbsp;
         <img 
-            src='./assets/delete.png'
+            src={
+              process.env.PUBLIC_URL +
+              '/assets/delete.png'
+            }
             alt='Xóa'
             width='30' style={{cursor: 'pointer'}}
             title='Bấm để xóa task'

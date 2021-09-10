@@ -52,7 +52,10 @@ class TodoList extends React.Component {
         <br />
         <div className='aligned'>
         <img 
-            src='./assets/add.png'
+            src={
+              process.env.PUBLIC_URL +
+              '/assets/add.png'
+            }
             alt='Add Task'
             width='35' style={{cursor: 'pointer'}}
             title='Bấm để thêm task'
