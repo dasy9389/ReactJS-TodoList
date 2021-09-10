@@ -19,7 +19,7 @@ class App extends React.Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style={{verticalAlign: 'top'}}>
               <td><TodoList name='Di cho' /></td>
               <td><TodoList name='Di shopping' /></td>
             </tr>

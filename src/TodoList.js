@@ -72,8 +72,7 @@ class TodoList extends React.Component {
                 <Todo
                 ref='todo' 
                 key={index} 
-                id={value.id} 
-                value={value.name}
+                data={value} 
                 deleteTask={this.deleteTask}
                 completeTask={this.completeTask}
                 />);
